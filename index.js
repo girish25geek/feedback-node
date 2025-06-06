@@ -3,7 +3,7 @@ const path = require('path');
 const bodyParser = require('body-parser');
 
 const app = express();
-const PORT = 3111;
+const PORT = 3001;
 let feedbacks = [];
 
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -16,7 +16,10 @@ app.get('/', (req, res) => {
 app.post('/submit', (req, res) => {
   const feedback = req.body.feedback;
   if (feedback) {
-    feedbacks.push(feedback);
+    feedbacks.push({
+      text: feedback,
+      time: new Date().toLocaleString()
+    });
   }
   res.redirect('/');
 });
@@ -26,5 +29,5 @@ app.get('/feedbacks', (req, res) => {
 });
 
 app.listen(PORT, () => {
-  console.log(`🧠 Feedback app running on http://localhost:${PORT}`);
+  console.log(`🚀 Feedback Pro app live at http://localhost:${PORT}`);
 });
