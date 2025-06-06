@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Feedback App</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>💬 Leave Your Feedback</h1>
+    <form action="/submit" method="POST">
+      <textarea name="feedback" required placeholder="Type something..."></textarea>
+      <button type="submit">Submit</button>
+    </form>
+    <h2>Feedbacks</h2>
+    <ul id="feedback-list"></ul>
+  </div>
+
+  <script src="/script.js"></script>
+</body>
+</html>

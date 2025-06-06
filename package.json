@@ -1,0 +1,15 @@
+{
+  "name": "node-feedback-app",
+  "version": "1.0.0",
+  "description": "A simple feedback app with interactive form using Node.js and Express",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Girish",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "body-parser": "^1.20.2"
+  }
+}
