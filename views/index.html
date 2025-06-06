@@ -2,20 +2,20 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Feedback App</title>
-  <link rel="stylesheet" href="/style.css">
+  <title>✨ Feedback Pro</title>
+  <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
   <div class="container">
-    <h1>💬 Leave Your Feedback</h1>
-    <form action="/submit" method="POST">
-      <textarea name="feedback" required placeholder="Type something..."></textarea>
-      <button type="submit">Submit</button>
+    <h1>💬 Feedback Pro</h1>
+    <form id="feedback-form">
+      <textarea id="feedback-text" name="feedback" maxlength="250" required placeholder="What’s on your mind?"></textarea>
+      <div id="char-count">0 / 250</div>
+      <button type="submit">Submit Feedback</button>
     </form>
-    <h2>Feedbacks</h2>
     <ul id="feedback-list"></ul>
   </div>
 
-  <script src="/script.js"></script>
+  <script src="/js/script.js"></script>
 </body>
 </html>
